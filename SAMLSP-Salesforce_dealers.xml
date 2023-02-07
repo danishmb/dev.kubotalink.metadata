@@ -60,7 +60,7 @@ lNQj4YqfGHJ16ADYMUnqxI6sEcanlLvZ0K9pd405ji0ytVS6zbZrC+visaHsxAT9</ds:X509Certifi
       <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubotaservice--ksdevsso.sandbox.my.site.com/kservice1/services/auth/sp/saml2/logout"/>
       <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://kubotaservice--ksdevsso.sandbox.my.site.com/kservice1/services/auth/sp/saml2/logout"/>
       <md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</md:NameIDFormat>
-      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubotaservice--ksdevsso.sandbox.my.salesforce.com" index="0" isDefault="true"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubotaservice--ksdevsso.sandbox.my.salesforce.com" index="0" />
       <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubotaservice--ksdevsso.sandbox.my.site.com/fntvforcesite/login" index="1"/>
       <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubotaservice--ksdevsso.sandbox.my.site.com/inactive1/login" index="2"/>
       <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubotaservice--ksdevsso.sandbox.my.site.com/pubvforcesite/login" index="3"/>
@@ -71,7 +71,7 @@ lNQj4YqfGHJ16ADYMUnqxI6sEcanlLvZ0K9pd405ji0ytVS6zbZrC+visaHsxAT9</ds:X509Certifi
       <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubotaservice--ksdevsso.sandbox.my.site.com/login" index="8"/>
       <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubotaservice--ksdevsso.sandbox.my.site.com/publicvforcesite/login" index="9"/>
       <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubotaservice--ksdevsso.sandbox.my.site.com/DealersPortal/login" index="10"/>
-      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubotaservice--ksdevsso.sandbox.my.site.com/DealersPortalV2/login" index="11"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubotaservice--ksdevsso.sandbox.my.site.com/DealersPortalV2/login" index="11" isDefault="true"/>
       <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubotaservice--ksdevsso.sandbox.my.site.com/ksdev/login" index="12"/>
       <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubotaservice--ksdevsso.sandbox.my.site.com/kservice1/login" index="13"/>
    </md:SPSSODescriptor>
