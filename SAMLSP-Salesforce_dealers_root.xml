@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" entityID="https://kubotaservice--ksdevsso.sandbox.my.site.com/s/" validUntil="2033-02-06T21:35:55.991Z" xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+   <md:SPSSODescriptor AuthnRequestsSigned="true" WantAssertionsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:KeyDescriptor use="signing">
+         <ds:KeyInfo>
+            <ds:X509Data>
+               <ds:X509Certificate>MIIErDCCA5SgAwIBAgIOAYXL3zV0AAAAACGsJVwwDQYJKoZIhvcNAQELBQAwgZAx
+KDAmBgNVBAMMH1NlbGZTaWduZWRDZXJ0XzE5SmFuMjAyM18yMTExMjExGDAWBgNV
+BAsMDzAwRDc5MDAwMDAwME1VQzEXMBUGA1UECgwOU2FsZXNmb3JjZS5jb20xFjAU
+BgNVBAcMDVNhbiBGcmFuY2lzY28xCzAJBgNVBAgMAkNBMQwwCgYDVQQGEwNVU0Ew
+HhcNMjMwMTE5MjExMTIxWhcNMjQwMTE5MTIwMDAwWjCBkDEoMCYGA1UEAwwfU2Vs
+ZlNpZ25lZENlcnRfMTlKYW4yMDIzXzIxMTEyMTEYMBYGA1UECwwPMDBENzkwMDAw
+MDAwTVVDMRcwFQYDVQQKDA5TYWxlc2ZvcmNlLmNvbTEWMBQGA1UEBwwNU2FuIEZy
+YW5jaXNjbzELMAkGA1UECAwCQ0ExDDAKBgNVBAYTA1VTQTCCASIwDQYJKoZIhvcN
+AQEBBQADggEPADCCAQoCggEBAM1MuL0EZRACRgeK34qabSTxscoTVr8x6vED2qnQ
+uZmGZ548Ai0yTx2o5S/n220aUv1QQfm1rHruAx6A5FHdQFBOlGJ4dU3G4lAR45XN
+AZOVrEhZBF/LKy28fe4PqygG/+GH2zAfpjaVDuBAzy5AuZQa43wiPRqS5lAbC4RC
+HNyeV10UfNA44MEq9ZXCKmlJcUuzNAkFuSD34xnSL+uEGZK9mm4ffK0VlGbVG4Pp
+0OdTvvmcnIZhRjoBG2lBeWl1TXkhrL6aT7dsu832vkxkQn3yR/S73BQm2EkFf5Mg
+zwIzKw9JdyNyLnFZXqS1T9eRrA4DsEWa2/rLCb7cUDTyHEMCAwEAAaOCAQAwgf0w
+HQYDVR0OBBYEFB60gGadzxjOYXFVod7STfx9+7WJMA8GA1UdEwEB/wQFMAMBAf8w
+gcoGA1UdIwSBwjCBv4AUHrSAZp3PGM5hcVWh3tJN/H37tYmhgZakgZMwgZAxKDAm
+BgNVBAMMH1NlbGZTaWduZWRDZXJ0XzE5SmFuMjAyM18yMTExMjExGDAWBgNVBAsM
+DzAwRDc5MDAwMDAwME1VQzEXMBUGA1UECgwOU2FsZXNmb3JjZS5jb20xFjAUBgNV
+BAcMDVNhbiBGcmFuY2lzY28xCzAJBgNVBAgMAkNBMQwwCgYDVQQGEwNVU0GCDgGF
+y981dAAAAAAhrCVcMA0GCSqGSIb3DQEBCwUAA4IBAQARhcef+SvBD1vbP1OizKvX
+wpMUUGwY5PLjqe2XmUWCP5zTx8wX02GDt1G0ARrraih+OvMRjnEEJFxnuJPb7M6L
+NizejUtYYXvWWxsMhhAJFAscmTkqu1KTeOv1IKnKzvB/FV0HgdNw6DcacbtAj+Mb
+jSaqs38yNsl97aThZe00i8FQuhjp2BbGAFVmRk1gS+o3UobP/QHdDSTHcQ5NwS8w
+Sxm0eym+eJEi3jdBQw6kUpmIsuWEJRIglvoKRBkAKlj7SuDEEhzyFHarnyLIU28Q
+lNQj4YqfGHJ16ADYMUnqxI6sEcanlLvZ0K9pd405ji0ytVS6zbZrC+visaHsxAT9</ds:X509Certificate>
+            </ds:X509Data>
+         </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubotaservice--ksdevsso.sandbox.my.salesforce.com/services/auth/sp/saml2/logout"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://kubotaservice--ksdevsso.sandbox.my.salesforce.com/services/auth/sp/saml2/logout"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubotaservice--ksdevsso.sandbox.my.site.com/fntvforcesite/services/auth/sp/saml2/logout"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://kubotaservice--ksdevsso.sandbox.my.site.com/fntvforcesite/services/auth/sp/saml2/logout"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubotaservice--ksdevsso.sandbox.my.site.com/inactive1/services/auth/sp/saml2/logout"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://kubotaservice--ksdevsso.sandbox.my.site.com/inactive1/services/auth/sp/saml2/logout"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubotaservice--ksdevsso.sandbox.my.site.com/pubvforcesite/services/auth/sp/saml2/logout"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://kubotaservice--ksdevsso.sandbox.my.site.com/pubvforcesite/services/auth/sp/saml2/logout"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubotaservice--ksdevsso.sandbox.my.site.com/inactive3/services/auth/sp/saml2/logout"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://kubotaservice--ksdevsso.sandbox.my.site.com/inactive3/services/auth/sp/saml2/logout"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubotaservice--ksdevsso.sandbox.my.site.com/guestvforcesite/services/auth/sp/saml2/logout"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://kubotaservice--ksdevsso.sandbox.my.site.com/guestvforcesite/services/auth/sp/saml2/logout"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubotaservice--ksdevsso.sandbox.my.site.com/inactive6/services/auth/sp/saml2/logout"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://kubotaservice--ksdevsso.sandbox.my.site.com/inactive6/services/auth/sp/saml2/logout"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubotaservice--ksdevsso.sandbox.my.site.com/inactive8/services/auth/sp/saml2/logout"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://kubotaservice--ksdevsso.sandbox.my.site.com/inactive8/services/auth/sp/saml2/logout"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubotaservice--ksdevsso.sandbox.my.site.com/services/auth/sp/saml2/logout"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://kubotaservice--ksdevsso.sandbox.my.site.com/services/auth/sp/saml2/logout"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubotaservice--ksdevsso.sandbox.my.site.com/publicvforcesite/services/auth/sp/saml2/logout"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://kubotaservice--ksdevsso.sandbox.my.site.com/publicvforcesite/services/auth/sp/saml2/logout"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubotaservice--ksdevsso.sandbox.my.site.com/DealersPortal/services/auth/sp/saml2/logout"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://kubotaservice--ksdevsso.sandbox.my.site.com/DealersPortal/services/auth/sp/saml2/logout"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubotaservice--ksdevsso.sandbox.my.site.com/DealersPortalV2/services/auth/sp/saml2/logout"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://kubotaservice--ksdevsso.sandbox.my.site.com/DealersPortalV2/services/auth/sp/saml2/logout"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubotaservice--ksdevsso.sandbox.my.site.com/ksdev/services/auth/sp/saml2/logout"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://kubotaservice--ksdevsso.sandbox.my.site.com/ksdev/services/auth/sp/saml2/logout"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubotaservice--ksdevsso.sandbox.my.site.com/kservice1/services/auth/sp/saml2/logout"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://kubotaservice--ksdevsso.sandbox.my.site.com/kservice1/services/auth/sp/saml2/logout"/>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</md:NameIDFormat>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubotaservice--ksdevsso.sandbox.my.salesforce.com" index="0" isDefault="true"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubotaservice--ksdevsso.sandbox.my.site.com/fntvforcesite/login" index="1"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubotaservice--ksdevsso.sandbox.my.site.com/inactive1/login" index="2"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubotaservice--ksdevsso.sandbox.my.site.com/pubvforcesite/login" index="3"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubotaservice--ksdevsso.sandbox.my.site.com/inactive3/login" index="4"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubotaservice--ksdevsso.sandbox.my.site.com/guestvforcesite/login" index="5"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubotaservice--ksdevsso.sandbox.my.site.com/inactive6/login" index="6"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubotaservice--ksdevsso.sandbox.my.site.com/inactive8/login" index="7"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubotaservice--ksdevsso.sandbox.my.site.com/login" index="8"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubotaservice--ksdevsso.sandbox.my.site.com/publicvforcesite/login" index="9"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubotaservice--ksdevsso.sandbox.my.site.com/DealersPortal/login" index="10"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubotaservice--ksdevsso.sandbox.my.site.com/DealersPortalV2/login" index="11"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubotaservice--ksdevsso.sandbox.my.site.com/ksdev/login" index="12"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubotaservice--ksdevsso.sandbox.my.site.com/kservice1/login" index="13"/>
+   </md:SPSSODescriptor>
+</md:EntityDescriptor>
