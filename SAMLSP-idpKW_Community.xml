@@ -1,50 +1,36 @@
-<?xml version="1.0" encoding="UTF-8"?><md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" entityID="https://kubota--uat.sandbox.my.salesforce.com" validUntil="2033-02-09T16:01:33.216Z" xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<?xml version="1.0" encoding="UTF-8"?><md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" entityID="https://kubota--uat.sandbox.my.site.com/dealer" validUntil="2033-02-09T16:28:00.550Z" xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
    <md:SPSSODescriptor AuthnRequestsSigned="true" WantAssertionsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
       <md:KeyDescriptor use="signing">
          <ds:KeyInfo>
             <ds:X509Data>
-               <ds:X509Certificate>MIIErDCCA5SgAwIBAgIOAYPM7L7pAAAAAFM/kmMwDQYJKoZIhvcNAQELBQAwgZAx
-KDAmBgNVBAMMH1NlbGZTaWduZWRDZXJ0XzE0SnVsMjAyMl8xMzIwMDAxGDAWBgNV
-BAsMDzAwRDFEMDAwMDAwZ1VUNTEXMBUGA1UECgwOU2FsZXNmb3JjZS5jb20xFjAU
+               <ds:X509Certificate>MIIErDCCA5SgAwIBAgIOAXqlLJbOAAAAAFpeQlcwDQYJKoZIhvcNAQELBQAwgZAx
+KDAmBgNVBAMMH1NlbGZTaWduZWRDZXJ0XzE0SnVsMjAyMV8xMzIwMDAxGDAWBgNV
+BAsMDzAwRDFVMDAwMDAwRWlMMzEXMBUGA1UECgwOU2FsZXNmb3JjZS5jb20xFjAU
 BgNVBAcMDVNhbiBGcmFuY2lzY28xCzAJBgNVBAgMAkNBMQwwCgYDVQQGEwNVU0Ew
-HhcNMjIxMDEyMTYwMDEwWhcNMjMxMDEyMTIwMDAwWjCBkDEoMCYGA1UEAwwfU2Vs
-ZlNpZ25lZENlcnRfMTRKdWwyMDIyXzEzMjAwMDEYMBYGA1UECwwPMDBEMUQwMDAw
-MDBnVVQ1MRcwFQYDVQQKDA5TYWxlc2ZvcmNlLmNvbTEWMBQGA1UEBwwNU2FuIEZy
+HhcNMjEwNzE0MTMyMDAwWhcNMjIwNzE0MTIwMDAwWjCBkDEoMCYGA1UEAwwfU2Vs
+ZlNpZ25lZENlcnRfMTRKdWwyMDIxXzEzMjAwMDEYMBYGA1UECwwPMDBEMVUwMDAw
+MDBFaUwzMRcwFQYDVQQKDA5TYWxlc2ZvcmNlLmNvbTEWMBQGA1UEBwwNU2FuIEZy
 YW5jaXNjbzELMAkGA1UECAwCQ0ExDDAKBgNVBAYTA1VTQTCCASIwDQYJKoZIhvcN
-AQEBBQADggEPADCCAQoCggEBAIu2MfZxI0bZ/MLJP2pK26yKyDcmqWqQrJYCLrbD
-YWEc9eJ4wJl3BiIlLrwiNXUxyCupBOITjufR+A00sMcEkpLVrwOtPVmmqboudvML
-tPlvDRQtM1Mo1PcWRqNKiZykKrJoGgVXFnSVCdke7enogXxxSBlCpAJtop9kJp/w
-eYHK8y0BM806OoY+1xvnKAy73i4oPngi+QFbIQsKNM/2fdLKs9NasLnS3ChEewgk
-aGS+XDeXmW+RYz5JCHH7yzBqI6V6uUnnls5UR7h72KTgYYgR67AKSw6/KXZ1mSmz
-8FuQARba2QYtRy1G5JJM5qXsVltVMVU3G/ENF4E6uD01P2sCAwEAAaOCAQAwgf0w
-HQYDVR0OBBYEFPBnCrwQX8lUiJd/OAE/S+ZeyQ0GMA8GA1UdEwEB/wQFMAMBAf8w
-gcoGA1UdIwSBwjCBv4AU8GcKvBBfyVSIl384AT9L5l7JDQahgZakgZMwgZAxKDAm
-BgNVBAMMH1NlbGZTaWduZWRDZXJ0XzE0SnVsMjAyMl8xMzIwMDAxGDAWBgNVBAsM
-DzAwRDFEMDAwMDAwZ1VUNTEXMBUGA1UECgwOU2FsZXNmb3JjZS5jb20xFjAUBgNV
-BAcMDVNhbiBGcmFuY2lzY28xCzAJBgNVBAgMAkNBMQwwCgYDVQQGEwNVU0GCDgGD
-zOy+6QAAAABTP5JjMA0GCSqGSIb3DQEBCwUAA4IBAQA9Uxmh2pHqJW9jTewumt6s
-F9VlUS13kfn4q1YP/vBPu8HTo2i/HuiXgFaBifvZO7pDKnrwgDs1T5euKUCmCwIU
-m3dYB7LD+X9rrkyGndgHmrT8Wh8pUCZhAe7N5PeXb1g4NBuqeH5pExG37n3FQZGp
-S4s1Hdsb804Qlt3lclNmVs+tdoFBBAT8wlOZC8xUjUIIpB4vIdvFkeMhfYr0yCg1
-cKt0HmRCvnDTAQbX2rKjv7Na0nOsOp8npAdJfTR0Rmwiu3/lwEKcKUT57/y6nP2i
-4b78yku7R0DcVW1q1Q2bA7YJkmRgBkBwazyQUM8tcjcC8XZnF9mSlTuSgB5M53k7</ds:X509Certificate>
+AQEBBQADggEPADCCAQoCggEBAJUfxTcu8ZF2Vx7FBAM2YCse8m0gZyk1C/skhHNA
+Ia7mFwKKwhY3xbOBZJXLnmoQ8iQvfvTjKYCPp1azbMHNhq9TEXxlbFpiWiT9CRuO
+TM+8SsMnF4Ic5PE3P/+k0lm8XSfsoNj5TuHeqbgdX8OkKQ82bW/l448re7jKPUKG
+m4ba0fgku3PG/RruOfqo5VKwcdZJ0jxU8Pz/Z6tnHcDJ+Xni5EhHR7B6QVVJMl5G
+VbZKk5bhoxVyfAJ1ezh9qjMevMdeeZhaAyT6ekkysGH+qS9ziYrk8zQ5k1vLw3gz
+WqpNfYMCrB/v63MPD/arI5e/TPNHArWkB7nj6eTcxpQhy88CAwEAAaOCAQAwgf0w
+HQYDVR0OBBYEFDyAQsn+3xzAq79qVrf25jIOVGBiMA8GA1UdEwEB/wQFMAMBAf8w
+gcoGA1UdIwSBwjCBv4AUPIBCyf7fHMCrv2pWt/bmMg5UYGKhgZakgZMwgZAxKDAm
+BgNVBAMMH1NlbGZTaWduZWRDZXJ0XzE0SnVsMjAyMV8xMzIwMDAxGDAWBgNVBAsM
+DzAwRDFVMDAwMDAwRWlMMzEXMBUGA1UECgwOU2FsZXNmb3JjZS5jb20xFjAUBgNV
+BAcMDVNhbiBGcmFuY2lzY28xCzAJBgNVBAgMAkNBMQwwCgYDVQQGEwNVU0GCDgF6
+pSyWzgAAAABaXkJXMA0GCSqGSIb3DQEBCwUAA4IBAQAfjSbElD+RnJRuotiox8GL
+o3w5BHUsCdDSe/6+XIHtM1jbY6+3Py0eELl+WdpdYtkWAoSdI2wTv/wDlkscG1xn
+bd5zB89pP4bhmgqRqbn3l0gKwIkF3YUafRDwcGSpKSml1SDobWmnl/unSjVrYCv4
+AWz4oeyhmVf7NGMW9oEpeMEHm7t2dv6DcE6BzQY8BEmJQI7ILfGT2CMYgb9gs1t8
+psOE7qaCrFA4LOB7cW6JEisXSB5BUslI5ZOy9qSLGy6P5woG3gtA1uR8JaGoatg3
+MLNXRQ7IA86fYbbEVFfh8j4UvHgTalFH6vDcK/bZOSVnb4fJ9izjieFxhXu9+aaM</ds:X509Certificate>
             </ds:X509Data>
          </ds:KeyInfo>
       </md:KeyDescriptor>
-      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubota--uat.sandbox.my.salesforce.com/services/auth/sp/saml2/logout"/>
-      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://kubota--uat.sandbox.my.salesforce.com/services/auth/sp/saml2/logout"/>
-      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubota--uat.sandbox.my.site.com/dealer/services/auth/sp/saml2/logout"/>
-      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://kubota--uat.sandbox.my.site.com/dealer/services/auth/sp/saml2/logout"/>
-      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubota--uat.sandbox.my.site.com/gpmdealer/services/auth/sp/saml2/logout"/>
-      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://kubota--uat.sandbox.my.site.com/gpmdealer/services/auth/sp/saml2/logout"/>
-      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubota--uat.sandbox.my.site.com/kcldealer/services/auth/sp/saml2/logout"/>
-      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://kubota--uat.sandbox.my.site.com/kcldealer/services/auth/sp/saml2/logout"/>
-      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubota--uat.sandbox.my.site.com/kclsupplier/services/auth/sp/saml2/logout"/>
-      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://kubota--uat.sandbox.my.site.com/kclsupplier/services/auth/sp/saml2/logout"/>
-      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubota--uat.sandbox.my.site.com/kmakiesupplier/services/auth/sp/saml2/logout"/>
-      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://kubota--uat.sandbox.my.site.com/kmakiesupplier/services/auth/sp/saml2/logout"/>
-      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubota--uat.sandbox.my.site.com/Supplier/services/auth/sp/saml2/logout"/>
-      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://kubota--uat.sandbox.my.site.com/Supplier/services/auth/sp/saml2/logout"/>
       <md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</md:NameIDFormat>
       <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubota--uat.sandbox.my.salesforce.com?so=00D1D000000gUT5" index="0" isDefault="true"/>
       <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubota--uat.sandbox.my.site.com/dealer/login?so=00D1D000000gUT5" index="1"/>
