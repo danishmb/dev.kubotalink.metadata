@@ -42,20 +42,6 @@ function setCookie(name, value, expires, path, domain, secure)
         ((secure) ? "; secure" : "");
 }
 
-function showTermCondition() {
-            var l_parms = 'scrollbars=yes' +
-                          ',resizable=1' +
-                          ',width=700' +
-                          ',height=400' +
-                          ',screenX=0' +
-                          ',screenY=0' +
-                          ',left=' + ((screen.availWidth / 2) - 400).toString() +
-                          ',top=' + ((screen.availHeight / 2) - 350).toString();
-
-            var l_url = "https://sb1kl.kubota-kna.com/KubotaLinkTermCondition.htm";
-
-            windowHandle = window.open(l_url, "KubotaLinkTermCondition", l_parms);
-        }
 </script>
 
 </head>
@@ -194,7 +180,23 @@ function showTermCondition() {
 				<!-- LOGIN ENDS HERE -->
 				<tr>
 					<td colspan="3" align="center" height="60">By clicking Sign In you acknowledge and agree to abide by the <a href="javascript:showTermCondition();"> terms and conditions </a>for the use of KubotaLink
-          
+          <script type="text/javascript">
+
+            function showTermCondition() {
+              var l_parms = 'scrollbars=yes' +
+                            ',resizable=1' +
+                            ',width=700' +
+                            ',height=400' +
+                            ',screenX=0' +
+                            ',screenY=0' +
+                            ',left=' + ((screen.availWidth / 2) - 400).toString() +
+                            ',top=' + ((screen.availHeight / 2) - 350).toString();
+  
+              var l_url = "https://sb1kl.kubota-kna.com/KubotaLinkTermCondition.htm";
+  
+              windowHandle = window.open(l_url, "KubotaLinkTermCondition", l_parms);
+          }
+          </script>
           </td>
 				</tr>
 				<tr>
