@@ -78,7 +78,7 @@ function showTermCondition() {
   <tr>
     <td width="301" height="33">
       <img src="https://sb1kl.kubota-kna.com/eLogin/images/spacer.gif" width="301" height="33" border="0"></td>
-    <td width="336" background="images/spacer.gif">
+    <td width="336" background="https://sb1kl.kubota-kna.com/eLogin/images/spacer.gif">
       <img src="https://sb1kl.kubota-kna.com/eLogin/images/spacer.gif" width="336" height="33" border="0"></td>
     <td width="colWidth">
       <img src="https://sb1kl.kubota-kna.com/eLogin/images/spacer.gif" width="colWidth" height="33" border="0"></td>
@@ -193,7 +193,32 @@ function showTermCondition() {
 				</tr>
 				<!-- LOGIN ENDS HERE -->
 				<tr>
-					<td colspan="3" align="center" height="60">By clicking Sign In you acknowledge and agree to abide by the <a href="javascript:showTermCondition();"> terms and conditions </a>for the use of KubotaLink</td>
+					<td colspan="3" align="center" height="60">By clicking Sign In you acknowledge and agree to abide by the <a href="javascript:showTermCondition();"> terms and conditions </a>for the use of KubotaLink
+          
+            <script type="text/javascript">
+              function addTermsOfUseLink() {
+                // find the terms of use label element
+                var termsOfUseLabel = document.querySelector('#api label[for="termsOfUse"]');
+                if (!termsOfUseLabel) {
+                    return;
+                }
+            
+                // get the label text
+                var termsLabelText = termsOfUseLabel.innerHTML;
+            
+                // create a new <a> element with the same inner text
+                var termsOfUseUrl = 'https://sb1kl.kubota-kna.com/KubotaLinkTermCondition.htm/KubotaLinkTermCondition.htm';
+                var termsOfUseLink = document.createElement('a');
+                termsOfUseLink.setAttribute('href', termsOfUseUrl);
+                termsOfUseLink.setAttribute('target', '_blank');
+                termsOfUseLink.appendChild(document.createTextNode(termsLabelText));
+            
+                // replace the label text with the new element
+                termsOfUseLabel.replaceChild(termsOfUseLink, termsOfUseLabel.firstChild);
+            }
+            </script>
+          
+          </td>
 				</tr>
 				<tr>
 					<td colspan="3" align="center" height="60">Problems signing in?<BR> <A class=Link href="https://sb1kl.kubota-kna.com/ContactUs.html" target="ContactUs">Contact Us</A>.</td>
