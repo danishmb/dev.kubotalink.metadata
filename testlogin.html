@@ -52,7 +52,7 @@ function showTermCondition() {
                           ',left=' + ((screen.availWidth / 2) - 400).toString() +
                           ',top=' + ((screen.availHeight / 2) - 350).toString();
 
-            var l_url = "https://sb1kl.kubota-kna.com/KubotaLinkTermCondition.htm/KubotaLinkTermCondition.htm";
+            var l_url = "https://sb1kl.kubota-kna.com/KubotaLinkTermCondition.htm";
 
             windowHandle = window.open(l_url, "KubotaLinkTermCondition", l_parms);
         }
@@ -194,29 +194,6 @@ function showTermCondition() {
 				<!-- LOGIN ENDS HERE -->
 				<tr>
 					<td colspan="3" align="center" height="60">By clicking Sign In you acknowledge and agree to abide by the <a href="javascript:showTermCondition();"> terms and conditions </a>for the use of KubotaLink
-          
-            <script type="text/javascript">
-              function addTermsOfUseLink() {
-                // find the terms of use label element
-                var termsOfUseLabel = document.querySelector('#api label[for="termsOfUse"]');
-                if (!termsOfUseLabel) {
-                    return;
-                }
-            
-                // get the label text
-                var termsLabelText = termsOfUseLabel.innerHTML;
-            
-                // create a new <a> element with the same inner text
-                var termsOfUseUrl = 'https://sb1kl.kubota-kna.com/KubotaLinkTermCondition.htm/KubotaLinkTermCondition.htm';
-                var termsOfUseLink = document.createElement('a');
-                termsOfUseLink.setAttribute('href', termsOfUseUrl);
-                termsOfUseLink.setAttribute('target', '_blank');
-                termsOfUseLink.appendChild(document.createTextNode(termsLabelText));
-            
-                // replace the label text with the new element
-                termsOfUseLabel.replaceChild(termsOfUseLink, termsOfUseLabel.firstChild);
-            }
-            </script>
           
           </td>
 				</tr>
