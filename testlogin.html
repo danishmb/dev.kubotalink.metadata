@@ -4,53 +4,317 @@
 <head>
 <title>KubotaLink Login</title>
 
-<link rel="stylesheet" type="text/css" href="https://sb1kl.kubota-kna.com/styles/KLStyles.css">
+<!--link rel="stylesheet" type="text/css" href="https://sb1kl.kubota-kna.com/styles/KLStyles.css">
 <script type="text/javascript" src="https://sb1kl.kubota-kna.com/js/BaseLib.js"></script>
-<script type="text/javascript" src="https://sb1kl.kubota-kna.com/js/CookieLib.js"></script>
+<script type="text/javascript" src="https://sb1kl.kubota-kna.com/js/CookieLib.js"></script-->
 <style>
-  @import url(https://fonts.googleapis.com/css?family=Dancing+Script|Roboto);
-  h1 {
-    color: blue;
-    text-align: center;
-  }
-  .intro h2 {
-    text-align: center;
-  }
-  .entry {
-    width: 400px ;
-    margin-left: auto ;
-    margin-right: auto ;
-  }
-  .divider h2 {
-    text-align: center;
-  }
-  .create {
-    width: 400px ;
-    margin-left: auto ;
-    margin-right: auto ;
-  }
-
-    
-
-    *,
-    *:after,
-    *:before {
-      box-sizing: border-box;
+  @media screen {
+    * {
+      COLOR: #000000; 
+      FONT-SIZE: 10pt;
+      FONT-FAMILY: tahoma,verdana,arial;
     }
-
-    .btn {
-      background: #fff;
-      padding: 5px;
-      width: 150px;
-      height: 35px;
-      border: 1px solid #FF4081;
-      margin-top: 25px;
-      cursor: pointer;
-      transition: 0.3s;
-      box-shadow: 0 50px #FF4081 inset;
-      color: #fff;
+    .Title {
+      COLOR: #000000; FONT-FAMILY: tahoma,verdana,arial; FONT-SIZE: 12pt; FONT-WEIGHT: bold
     }
-
+    .bigTableHeader {
+      BACKGROUND-COLOR: #cccccc; COLOR: #000000; FONT-FAMILY: tahoma,verdana,arial; FONT-SIZE: 12pt; FONT-WEIGHT: bold
+    }
+  }
+  @media print {
+    * {
+      COLOR: #000000; 
+      FONT-SIZE: 8pt;
+      FONT-FAMILY: Helvetica,Arial,Tahoma;
+    }
+  }
+  .BigText {
+    COLOR: #000000; FONT-FAMILY: tahoma,verdana,arial; FONT-SIZE: 12pt
+  }
+  .BigBoldText {
+    COLOR: #000000; FONT-FAMILY: tahoma,verdana,arial; FONT-SIZE: 12pt; FONT-WEIGHT: bold
+  }
+  .textfield {
+    FONT-FAMILY: univers, verdana, arial, helvetica; FONT-SIZE: 8pt
+  }
+  .disabledTextfield {
+    FONT-FAMILY: univers, verdana, arial, helvetica; FONT-SIZE: 8pt
+  }
+  .AltText {
+    color:#CC3300;
+  }
+  .AltTextBold {
+    color:#CC3300;
+    font-weight:bold;
+  }
+  .KubotaLink {
+    BACKGROUND-COLOR: #FFFFFF; COLOR: #F05922; FONT-FAMILY: helvetica; FONT-SIZE: 36px; FONT-WEIGHT: bold
+  }
+  .globalMenu {
+    position:absolute; visibility:hidden; z-index:2; border-left:1px solid #000000;	border-right:1px solid #000000; border-bottom:1px solid #000000;
+  }
+  .globalSpacer {
+    BACKGROUND-COLOR:#000000;	COLOR:#ffffff; TEXT-DECORATION:none; position:relative;	visibility:visible;	z-index:0;
+  }
+  .Global,.G {
+    BACKGROUND-COLOR: #000000; COLOR: #ffffff; TEXT-DECORATION: none;	margin-left:6; margin-right:6;
+  }
+  A.Global:hover,A.G:hover {
+    COLOR: #ffff99; TEXT-DECORATION: underline
+  }
+  .InactiveGlobal,.IG {
+    BACKGROUND-COLOR: #000000; COLOR: #ffffff; TEXT-DECORATION: none; margin-left:6; margin-right:6;
+  }
+  A.InactiveGlobal:hover,A.IG:hover {
+    BACKGROUND-COLOR: #000000; COLOR: #ffffff; TEXT-DECORATION: none
+  }
+  .SubGlobal,.SG {
+    BACKGROUND-COLOR: #006666; COLOR: #ffffff; TEXT-DECORATION: none; margin-left:6; margin-right:6;
+  }
+  A.SubGlobal:hover,A.SG:hover {
+    BACKGROUND-COLOR: #006666; COLOR: #ffff99; TEXT-DECORATION: underline
+  }
+  .appMenu {
+    position:absolute; visibility:hidden; z-index:2; border-left:1px solid #000000;	border-right:1px solid #000000;	border-bottom:1px solid #000000;
+  }
+  .appSpacer {
+    BACKGROUND-COLOR:#006ea2;	COLOR:#ffffff; TEXT-DECORATION:none; position:relative;	visibility:visible;	z-index:0;
+  }
+  .Applications,.A {
+    BACKGROUND-COLOR: #006ea2; COLOR: #ffffff; TEXT-DECORATION: none; margin-left:6; margin-right:6;
+  }
+  A.Applications:hover,A.A {
+    COLOR: #ffff99; TEXT-DECORATION: underline
+  }
+  .InactiveApps,.IA {
+    BACKGROUND-COLOR: #006ea2; COLOR: #ffffff; TEXT-DECORATION: none; margin-left:6; margin-right:6;
+  }
+  A.InactiveApps:hover,A.IA {
+    COLOR: #ffffff; TEXT-DECORATION: none
+  }
+  .SubApplications,.SA {
+    BACKGROUND-COLOR: #006ea2; COLOR: #ffffff; TEXT-DECORATION: none; margin-left:6; margin-right:6;
+  }
+  A.SubApplications:hover,A.SA:hover {
+    BACKGROUND-COLOR: #006ea2; COLOR: #ffff99; TEXT-DECORATION: underline;
+  }
+  .SubApplicationsIndent,.SAI {
+    BACKGROUND-COLOR: #006ea2; COLOR: #ffffff; TEXT-DECORATION: none; margin-left:18; margin-right:6;
+  }
+  A.SubApplicationsIndent:hover,A.SAI:hover {
+    BACKGROUND-COLOR: #006ea2; COLOR: #ffff99; TEXT-DECORATION: underline;
+  }
+  .Header {
+    BACKGROUND-COLOR: #F05922; COLOR: #ffffff; FONT-WEIGHT: bold; TEXT-DECORATION: none;	margin-left:6; margin-right:6;
+  }
+  .HeaderBg {
+    BACKGROUND-COLOR: #F05922;
+  }
+  .DateHeader {
+    TEXT-ALIGN:RIGHT; BACKGROUND-COLOR: #F05922; COLOR: #ffffff; TEXT-DECORATION: none; margin-left:6; margin-right:6;
+  }
+  .HeaderNoBg {
+    COLOR: #ffffff; FONT-WEIGHT: bold; TEXT-DECORATION: none
+  }
+  .Link {
+    COLOR: #0000cc; FONT-WEIGHT: 500; TEXT-DECORATION: underline
+  }
+  A.Link:hover {
+    COLOR: #d9530a; FONT-WEIGHT: 500; TEXT-DECORATION: underline
+  }
+  .LinkW {
+    COLOR: #ffffff; FONT-WEIGHT: 500; TEXT-DECORATION: underline
+  }
+  A.LinkW:hover {
+    COLOR: #ffffff; FONT-WEIGHT: 500; TEXT-DECORATION: underline
+  }
+  .tableHeader {
+    BACKGROUND-COLOR: #cccccc; COLOR: #000000; FONT-WEIGHT: bold
+  }
+  .fieldLabel {
+    text-transform: uppercase; BACKGROUND-COLOR: #ffffff; COLOR: #000000; FONT-WEIGHT: bold
+  }
+  .fieldLabelBg {
+    text-transform: uppercase; BACKGROUND-COLOR: #cccccc; COLOR: #000000; FONT-WEIGHT: bold
+  }
+  .fieldLabelNumeric {
+    text-align:right; text-transform: uppercase; BACKGROUND-COLOR: #ffffff; COLOR: #000000; FONT-WEIGHT: bold
+  }
+  .fieldLabelNumericBg {
+    text-align:right; BACKGROUND-COLOR: #cccccc; text-transform: uppercase; BACKGROUND-COLOR: #ffffff; COLOR: #000000; FONT-WEIGHT: bold
+  }
+  .fieldValue {
+    BACKGROUND-COLOR: #ffffff; COLOR: #000000;
+  }
+  .fieldValueNumeric {
+    text-align:right; BACKGROUND-COLOR: #ffffff; COLOR: #000000;
+  }
+  .fieldValueBg {
+    BACKGROUND-COLOR: #ededed; COLOR: #000000;
+  }
+  .fieldValueNumericBg {
+    text-align:right; BACKGROUND-COLOR: #ededed; COLOR: #000000;
+  }
+  .tableEven {
+    BACKGROUND-COLOR: #ffffff; COLOR: #000000; 
+  }
+  .tableOdd {
+    BACKGROUND-COLOR: #ededed; COLOR: #000000; 
+  }
+  .tableOddBold {
+    BACKGROUND-COLOR: #ededed; COLOR: #000000; FONT-WEIGHT: bold
+  }
+  .Text {
+    COLOR: #000000;
+  }
+  td.TBorder {
+      padding: 6px;
+      text-align: center;
+  }
+  td.Text {
+      padding-bottom: 20px;
+  }
+  .mail {
+    padding-left: 22px;
+  }
+  .BText{
+  padding: 6px 0px 6px 0px;
+  FONT-WEIGHT: bold
+  }
+  .BoldText {
+    COLOR: #000000; FONT-WEIGHT: bold
+  }
+  .Border {
+    BORDER-BOTTOM: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; PADDING-BOTTOM: 4px; PADDING-LEFT: 4px; PADDING-RIGHT: 4px; PADDING-TOP: 4px
+  }
+  .titleBorder {
+    BORDER-LEFT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; PADDING: 6px;
+  }
+  .BorderDark {
+    BORDER-BOTTOM: #777777 1px solid; BORDER-LEFT: #777777 1px solid; BORDER-RIGHT: #777777 1px solid; BORDER-TOP: #777777 1px solid; PADDING-BOTTOM: 4px; PADDING-LEFT: 4px; PADDING-RIGHT: 4px; PADDING-TOP: 4px
+  }
+  .BorderBg {
+    BACKGROUND-COLOR: #cccccc; 
+  }
+  .Error {
+    COLOR: #cc3333;
+  }
+  .Blue {
+    COLOR: #0000cc; TEXT-DECORATION: underline
+  }
+  A.Blue:hover {
+    COLOR: #6666ff; TEXT-DECORATION: underline
+  }
+  .Green {
+    COLOR: #F05922; TEXT-DECORATION: underline
+  }
+  A.Green:hover {
+    COLOR: #6666ff; TEXT-DECORATION: underline
+  }
+  .DarkGreen {
+    COLOR: #006666; TEXT-DECORATION: underline
+  }
+  A.DarkGreen:hover {
+    COLOR: #6666ff; TEXT-DECORATION: underline
+  }
+  .Brick {
+    COLOR: #663300; TEXT-DECORATION: underline
+  }
+  A.Brick:hover {
+    COLOR: #6666ff; TEXT-DECORATION: underline
+  }
+  .Orange {
+    COLOR: #d9530a; TEXT-DECORATION: underline
+  }
+  A.Orange:hover {
+    COLOR: #6666ff; TEXT-DECORATION: underline
+  }
+  .BlueBg {
+    BACKGROUND-COLOR: #009999
+  }
+  .OrangeBg {
+    BACKGROUND-COLOR: #cc6600
+  }
+  .TrueBlueBg {
+    BACKGROUND-COLOR: #F05922;
+  }
+  .TrueOrangeBg {
+    BACKGROUND-COLOR: #d9530a
+  }
+  #Footer {
+    BACKGROUND: #F05922; POSITION: absolute; VISIBILITY: visible; WIDTH: 100%
+  }
+  #LoginFooter {
+    BACKGROUND-REPEAT: repeat; POSITION: absolute; VISIBILITY: visible
+  }
+  UL {
+    COLOR: #000000; MARGIN-BOTTOM: 10px; MARGIN-LEFT: 25px; MARGIN-TOP: 10px
+  }
+  UL LI {
+    LIST-STYLE: disc; MARGIN-BOTTOM: 0.5em
+  }
+  OL {
+    COLOR: #000000; MARGIN-BOTTOM: 10px; MARGIN-LEFT: 25px; MARGIN-TOP: 10px
+  }
+  OL LI {
+    MARGIN-BOTTOM: 0.7em
+  }
+  HR {
+    COLOR: #cccccc; HEIGHT: 1px
+  }
+  
+  input[type="submit"], input[type="button"], input[type="reset"] {
+    background: #F5F5F5 repeat-x 0 0;
+    border-color: #DEDEDE #BFBFBF #BFBFBF #DEDEDE;
+    color: #000000;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px;
+  }
+  
+  input[type="submit"]:disabled, input[type="button"]:disabled, input[type="reset"]:disabled {
+    background: #F5F5F5 repeat-x 0 0;
+    border-color: #DEDEDE #BFBFBF #BFBFBF #DEDEDE;
+    color: GRAY;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px;
+  }
+  #footer_copy {
+    border: 0 solid blue;
+    margin: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 610px;
+  
+  }
+  
+  #copyright {
+    clear: both;
+    font-size: 85%;
+    margin: 0;
+  }
+  
+  #footer-inner {
+    border-top: 4px solid #177e85;
+    height: 45px;
+    min-height: 22px;
+    padding-top: 6px;
+    position: relative;
+  }
+  
+  #footer-inner p#copyright {
+    position: absolute;
+    top: 5px;
+    right: 1px;
+    text-align: right;
+  }
+  
+  .blackLogo {
+    color: #333;
+    font-size: 1.6em;
+    font-weight: bold;
+  }
 </style>
 
 </head>
