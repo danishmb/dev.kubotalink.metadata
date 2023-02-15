@@ -4,7 +4,7 @@
 <head>
 <title>KubotaLink Login</title>
 
-<!--link rel="stylesheet" type="text/css" href="https://sb1kl.kubota-kna.com/styles/KLStyles.css"-->
+<!-- <link rel="stylesheet" type="text/css" href="https://sb1kl.kubota-kna.com/styles/KLStyles.css"> -->
 <script type="text/javascript" src="https://sb1kl.kubota-kna.com/js/BaseLib.js"></script>
 <script type="text/javascript" src="https://sb1kl.kubota-kna.com/js/CookieLib.js"></script>
 <style>
@@ -113,7 +113,15 @@
 					<!-- ERROR MESSAGES END HERE --> <!-- LOGIN START HERE -->
 				<tr>
 					<td>
-            <div id="api"></div>
+            <div id="api">
+              
+                  <div>
+                    <input id="email" type="text" name="u" placeholder="Username" required="required" />
+                  <a id="forgotPassword" href="https://bing.com">Forgot Password</a>
+                  <input id="password" type="password" name="p" placeholder="Password" required="required" />
+                  <button type="submit">Let me in.</button> 
+              </div>
+          </div>
           </td>
 				</tr>
 				<!-- LOGIN ENDS HERE -->
