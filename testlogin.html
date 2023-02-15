@@ -4,14 +4,10 @@
 <head>
 <title>KubotaLink Login</title>
 
-<script type="text/javascript">
-//document.location = "/eLogin/protected.jsp";
-</script>
-
 <link rel="stylesheet" type="text/css" href="https://sb1kl.kubota-kna.com/styles/KLStyles.css">
 <script type="text/javascript" src="https://sb1kl.kubota-kna.com/js/BaseLib.js"></script>
 <script type="text/javascript" src="https://sb1kl.kubota-kna.com/js/CookieLib.js"></script>
-<style>
+<style rel="stylesheet" type="text/css">
   h1 {
     color: blue;
     text-align: center;
@@ -33,37 +29,6 @@
     margin-right: auto ;
   }
 </style>
-<script type="text/javascript">
-if (window.document.captureEvents!=null) {
-  window.document.captureEvents(Event.KEYPRESS)
-}
-window.document.onkeypress = login;
-function login() {
-  var isValid = false
-  var username = document.loginForm.j_username.value
-  var password = document.loginForm.j_password.value
-  if (window.event.keyCode == 13 || window.event.keyCode == 0) {
-    if (username != null && username.length > 0 && password != null && password.length > 0) {
-      isValid = true
-    }
-    if (!isValid) {
-      alert("Please enter a valid User ID and Password.")
-    } else {
-      document.loginForm.submit()
-    }
-  }
-}
-
-function setCookie(name, value, expires, path, domain, secure)
-{
-    document.cookie= name + "=" + escape(value) +
-        ((expires) ? "; expires=" + expires.toGMTString() : "") +
-        ((path) ? "; path=" + path : "") +
-        ((domain) ? "; domain=" + domain : "") +
-        ((secure) ? "; secure" : "");
-}
-
-</script>
 
 </head>
 
@@ -75,7 +40,6 @@ function setCookie(name, value, expires, path, domain, secure)
 <IMG src="images/TractorCollage_Left.jpg" width="225" height="323" border=0>
 </div> -->
 
-<form method="POST" action='j_security_check' enctype="application/x-www-form-urlencoded" name="loginForm">
 
 <table width="100%" cellpadding="0" cellspacing="0" border="0" bgColor="#FAFAFA">
 <tr>
@@ -134,7 +98,7 @@ function setCookie(name, value, expires, path, domain, secure)
 			  <tr>
 			  </tr>
 			  <tr>
-			    <td height=48 background="https://sb1kl.kubota-kna.com/eLogin/images/LoginBorderL.jpg"><IMG src="images/spacer.gif" width=2 height=48 border=0></td>
+			    <td height=48 background="https://sb1kl.kubota-kna.com/eLogin/images/LoginBorderL.jpg"><IMG src="https://sb1kl.kubota-kna.com/eLogin/images/spacer.gif" width=2 height=48 border=0></td>
 			    <td id="border_rl"  align="center" valign="bottom">
 			  	<img border="0" src="https://sb1kl.kubota-kna.com/eLogin/images/Kubota_Logo_Banner_Home.jpg"
 												width="389" height="157"><span id="LoginKTCMarker"></span>
@@ -145,53 +109,7 @@ function setCookie(name, value, expires, path, domain, secure)
 			    <td height=270 background="https://sb1kl.kubota-kna.com/eLogin/images/LoginBorderL.jpg"><IMG src="https://sb1kl.kubota-kna.com/eLogin/images/spacer.gif" width=2 height=240 border=0></td>
 	    		    <td id="border_rl" valign="top">
 			    <table width="95%" height="98%" border="0" bordercolor="purple" align="center" valign="top">
-					<tr>
-						<td width="100%" height="45" colspan="3">
-						<!-- ERROR MESSAGES BEGIN HERE --> 
-						<script type="text/javascript">
-					  		var b = window.navigator.appName
-					  		var validBrowser = true;
-
-							var isiPad = (navigator.userAgent.match(/iPad/i) != null);
-							var isiPhone = (navigator.userAgent.match(/iPhone/i) != null);
-							var isAndroid = (navigator.userAgent.match(/Android/i) != null);
-							
-							//check for IE Browser
-					  		if (b.indexOf('Microsoft') != -1) {
-					    		var i = window.navigator.userAgent.indexOf('MSIE')
-					    		if (i != -1) {
-					      			var v = window.navigator.userAgent.substr(i+5,3)
-					      			if (v < 10 || isCompatibilityView() ) {
-					       				 document.write('<p class="Error"> You may be using an unsupported version of Internet Explorer. This website works best with Internet Explorer 10 (compatibility view off) or current version of Firefox or Chrome</p>');
-					        			 validBrowser = false;
-					     			 }
-					     		}			  			
-					  		//if browser is not IE, Firefox or Chrome
-					  		} else if (!(b.indexOf('Microsoft') != -1) && !(window.navigator.userAgent.indexOf('Gecko') >= 0)) {
-			       				 document.write('<p class="Error"> We cannot detect your browser. This website works best with Internet Explorer 10 or current version of Firefox or Chrome</p>');
-			        			 validBrowser = false;							
-					  		} else if (false) {
-					    			document.write('You must have cookies enabled to access the KubotaLink website.<br>')
-					  		}
-
-					  	function onResizeFn() {
-					    var windowWidth = document.body.clientWidth;
-					    //alert("Client Width: " + windowWidth);
-					    myMenu = document.getElementById("tractor1Div");
-					    if (myMenu != null) {
-					      if (windowWidth > 938) {
-					  	  myMenu.style.left = (windowWidth-938)/2 + 10;
-					      } else {
-					        myMenu.style.left = 10;
-					      }
-					  	myMenu.style.visibility = 'visible';
-					    }
-					  }
-					  window.onresize=onResizeFn
-					  window.onload=onResizeFn
-					</script> 
 					
-					</td>
 					<!-- ERROR MESSAGES END HERE --> <!-- LOGIN START HERE -->
 				<tr>
 					<td>
@@ -268,13 +186,5 @@ function setCookie(name, value, expires, path, domain, secure)
   </TBODY>
 </TABLE>
 
-</form>
-
 </body>
-<script language="javascript">
-if(document.loginForm.j_username != null) {
-	document.loginForm.j_username.focus()
-}
-</script>
-
 </html>
