@@ -280,7 +280,8 @@
 </body>
 <script type="text/javascript" lang="javascript">
 
-	checkLTPATokenAndClickEmployeeLoginButton();
+	const myTimeout = setTimeout(checkLTPATokenAndClickEmployeeLoginButton, 2000);
+	//checkLTPATokenAndClickEmployeeLoginButton();
 
 	function getCookie(name) {
 		var dc = document.cookie;
@@ -309,7 +310,7 @@
 		alert(cookie_LtpaToken);
 		alert(cookie_LtpaToken2);
 		if (cookie_LtpaToken != null && cookie_LtpaToken2 != null) {
-			
+			alert("ltpatoken found");
 			// do cookie exists stuff
 			const myTimeout = setTimeout(funcButtonClick, 1000);
 
