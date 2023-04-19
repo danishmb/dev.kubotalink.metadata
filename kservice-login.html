@@ -1698,7 +1698,7 @@ label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus::
   display: flex;
   padding: 25;
   max-width: 45%;
-  min-width: 350px;
+  min-width: 440px;
   min-height: 20vh;
   align-items: center;
 }
@@ -1828,7 +1828,121 @@ ul {
   background-color: white;
 }
 
-div#api { display: table }
+h1 {
+			color: blue;
+			text-align: center;
+		}
+		.intro h2 {
+			text-align: center;
+		}
+		.entry {
+			width: 400px ;
+			margin-left: auto ;
+			margin-right: auto ;
+		}
+		.divider h2 {
+			text-align: center;
+		}
+		.create {
+			width: 400px ;
+			margin-left: auto ;
+			margin-right: auto ;
+		}
+
+		input[type="text"] {
+			width: 62%;
+			background: #FFFFFF repeat-x 0 0;
+			color: #000000;
+			cursor: auto;
+			font-weight: 500;
+			padding: 5px;
+			border-radius: 5px;
+			border-width: 1px;
+		}
+
+		input[type="password"] {
+			width: 62%;
+			background: #FFFFFF repeat-x 0 0;
+			color: #000000;
+			cursor: auto;
+			font-weight: 500;
+			padding: 5px;
+			border-radius: 5px;
+			border-width: 1px;
+		}
+
+		label {
+			font-weight: bold;
+		}
+
+		label[for="signInName"], label[for="password"] {
+			display:none;
+		}
+
+		#next {
+			margin-left: 35%;
+			margin-top: 4%;
+			margin-bottom: 2%
+		}
+
+		.options div button {
+			margin-left: 34%;
+			outline: none;
+		}
+
+		::-webkit-input-placeholder {
+			color: #d3d3d3;
+			font-weight: 300;
+		}
+
+		:-moz-placeholder { /* Firefox 18- */
+			color: #d3d3d3;
+			font-weight: 300;
+		}
+
+		::-moz-placeholder {  /* Firefox 19+ */
+			color: #d3d3d3;
+			font-weight: 300;
+		}
+
+		:-ms-input-placeholder {
+			color: #d3d3d3;
+			font-weight: 300;
+		}
+
+		div .entry .entry-item {
+			margin-left: 23%
+		}
+
+		div .entry .entry-item input[type="password"] {
+			margin-top: 3%;
+		}
+
+		p[role="alert"] {
+			color: red;
+		}
+
+		div .error p {
+			color: red;
+		}
+
+		div .options div button {
+			background: none!important;
+			border: none;
+			padding: 0!important;
+			font-family: arial,sans-serif;
+			color: #0078d4;
+			cursor: pointer;
+			text-decoration:underline;
+			margin-top: 31%;
+			margin-left: 12%;
+		}
+		div .options div button:hover {
+			text-decoration:none;
+			color: #323130;
+		}
+
+		div#api { display: table }
 		.social { display: table-footer-group }
 		.localAccount { display: table-header-group }
 
