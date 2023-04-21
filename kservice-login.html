@@ -2216,6 +2216,7 @@ h1 {
 </body>
 <script type="text/javascript" lang="javascript">
   const hostname = "https://kservice.app";
+  const hostname_1 = "https://sb1kl.kubota-kna.com";
 	//const hostname = "{{environmentHostUrl}}";
   
   let head = document.getElementsByTagName('head')[0];
@@ -2247,32 +2248,18 @@ h1 {
 				',left=' + ((screen.availWidth / 2) - 400).toString() +
 				',top=' + ((screen.availHeight / 2) - 350).toString();
 
-		//let l_url = hostname + "/KubotaLinkTermCondition.htm";
-    let l_url = "https://sb1kl.kubota-kna.com" + "/KubotaLinkTermCondition.htm";
+		let l_url = hostname_1 + "/KubotaLinkTermCondition.htm";
 
 		windowHandle = window.open(l_url, "KubotaLinkTermCondition", l_params);
 	}
 
-    function dialPhoneCall() {
-    /*var phone_select = document.getElementById('phone_input').value;
-    if(phone_select == ""){
-    document.getElementById('d').innerHTML = 'The field can not be empty';
-    }
-    else if(isNaN(phone_select)){
-    document.getElementById('d').innerHTML = "String and other symbols are not allowed";
-    }
-    else if(phone_select === '911'){
-        var a = confirm("Are you sure you want to call this number? Note we will not be responsible if you made this call by mistake");
-    if(a == true){
-        window.location.href = 'tel:911';
-    }
+  function showContactUs() {
+		window.open(hostname + '/ContactUs.html', '_blank');
+	}
 
-    }    
-
-        else{*/
+  function dialPhoneCall() {
     window.location.href = 'tel:+1-303-499-7111';
-    //}
-}
+  }
   
 </script>
 </html>
