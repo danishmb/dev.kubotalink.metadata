@@ -351,6 +351,25 @@
 
 	document.getElementById('img_loginborderbl_1').src = hostname + "/eLogin/images/LoginBorderBL.jpg";
 
+	function showTermCondition() {
+		let l_params = 'scrollbars=yes' +
+				',resizable=1' +
+				',width=700' +
+				',height=400' +
+				',screenX=0' +
+				',screenY=0' +
+				',left=' + ((screen.availWidth / 2) - 400).toString() +
+				',top=' + ((screen.availHeight / 2) - 350).toString();
+
+		let l_url = hostname + "/KubotaLinkTermCondition.htm";
+
+		windowHandle = window.open(l_url, "KubotaLinkTermCondition", l_params);
+	}
+
+	function showContactUs() {
+		window.open(hostname + '/ContactUs.html', '_blank');
+	}
+
 	document.addEventListener("DOMContentLoaded", function () {
 
 		document.getElementById('td_spacer_1').style.background="url("+hostname+"/eLogin/images/spacer.gif)";
