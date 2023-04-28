@@ -8,9 +8,8 @@
 </ds:KeyInfo>
 </md:KeyDescriptor>
 <md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</md:NameIDFormat>
-<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubotaservice--ksdev.sandbox.my.site.com/login" index="0" isDefault="true"/>
-  <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubotaservice--ksdev.sandbox.my.site.com/s/kpaw-home" index="1"/>
-
+<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubotaservice--ksdev.sandbox.my.site.com/s/kpaw-home" index="0" isDefault="true"/>
+<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubotaservice--ksdev.sandbox.my.site.com/login" index="1"/>  
 <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubotaservice--ksdev.sandbox.my.site.com/fntvforcesite/login" index="2"/>
 <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubotaservice--ksdev.sandbox.my.site.com/inactive1/login" index="3"/>
 <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://kubotaservice--ksdev.sandbox.my.site.com/pubvforcesite/login" index="4"/>
